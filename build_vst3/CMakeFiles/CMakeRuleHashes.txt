@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+b26b7c1318d0ec3743446b0984ac4c84 SSL4KEQ_artefacts/JuceLibraryCode/JuceHeader.h
