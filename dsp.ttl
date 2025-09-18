@@ -12,7 +12,6 @@
 	doap:name "SSL 4000 EQ Pure" ;
 	doap:license <http://opensource.org/licenses/GPL-2.0> ;
 	lv2:project <https://example.com/ssl4000eq> ;
-	lv2:requiredFeature lv2:inPlaceBroken ;
 	lv2:optionalFeature lv2:hardRTCapable ;
 	lv2:extensionData inlinedisplay:interface ;
 

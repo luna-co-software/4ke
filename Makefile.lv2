@@ -2,7 +2,7 @@
 
 CC = gcc
 CXX = g++
-CFLAGS = -Wall -O2 -fPIC -DPIC -std=c99
+CFLAGS = -Wall -O2 -fPIC -DPIC -std=c99 -DLV2_EXTENDED
 LDFLAGS = -shared -lm -lcairo
 PKG_CONFIG = pkg-config
 
@@ -15,7 +15,7 @@ CAIRO_LIBS = $(shell $(PKG_CONFIG) --libs cairo)
 INSTALL_DIR = ~/.lv2/SSL_4000_EQ_Pure.lv2
 
 # Source and target
-SRC = ssl4keq_lv2.c
+SRC = ssl4keq_lv2_simple.c
 TARGET = ssl4keq.so
 
 all: $(TARGET)
