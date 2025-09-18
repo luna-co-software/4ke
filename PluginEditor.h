@@ -1,21 +1,21 @@
 #pragma once
 
 #include <JuceHeader.h>
-#include "SSL4KEQ.h"
-#include "SSLLookAndFeel.h"
+#include "FourKEQ.h"
+#include "FourKLookAndFeel.h"
 
 //==============================================================================
 /**
-    SSL 4000 EQ Plugin Editor
+    4K EQ Plugin Editor
 
-    Mimics the layout and styling of the SSL 4000 console EQ section
+    Professional console-style EQ interface
 */
-class SSL4KEQEditor : public juce::AudioProcessorEditor,
+class FourKEQEditor : public juce::AudioProcessorEditor,
                        private juce::Timer
 {
 public:
-    explicit SSL4KEQEditor(SSL4KEQ&);
-    ~SSL4KEQEditor() override;
+    explicit FourKEQEditor(FourKEQ&);
+    ~FourKEQEditor() override;
 
     //==============================================================================
     void paint(juce::Graphics&) override;
@@ -25,10 +25,10 @@ public:
 private:
     //==============================================================================
     // Reference to processor
-    SSL4KEQ& audioProcessor;
+    FourKEQ& audioProcessor;
 
     // Look and feel
-    SSLLookAndFeel sslLookAndFeel;
+    FourKLookAndFeel lookAndFeel;
 
     // HPF Section
     juce::Slider hpfFreqSlider;
@@ -110,8 +110,8 @@ private:
     // Helper methods
     void setupKnob(juce::Slider& slider, const juce::String& paramID,
                    const juce::String& label, bool centerDetented = false);
-    void setupSSLButton(juce::ToggleButton& button, const juce::String& text);
+    void setupButton(juce::ToggleButton& button, const juce::String& text);
     void drawKnobMarkings(juce::Graphics& g);
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(SSL4KEQEditor)
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(FourKEQEditor)
 };

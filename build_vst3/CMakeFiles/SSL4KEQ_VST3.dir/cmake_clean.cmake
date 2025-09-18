@@ -15,8 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.o.d"
   "CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o"
   "CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o.d"
-  "SSL4KEQ_artefacts/Release/VST3/SSL 4000 EQ.vst3/Contents/x86_64-linux/SSL 4000 EQ.pdb"
-  "SSL4KEQ_artefacts/Release/VST3/SSL 4000 EQ.vst3/Contents/x86_64-linux/SSL 4000 EQ.so"
+  "bin/VST3/SSL 4000 EQ.vst3/Contents/x86_64-linux/SSL 4000 EQ.pdb"
+  "bin/VST3/SSL 4000 EQ.vst3/Contents/x86_64-linux/SSL 4000 EQ.so"
 )
 
 # Per-language clean rules from dependency scanning.

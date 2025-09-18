@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marc/Projects/4ke/build_vst3
+CMAKE_SOURCE_DIR = /home/marc/Projects/4ke
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/marc/Projects/4ke/build_vst3
@@ -105,6 +105,6 @@ CMakeFiles/juce_vst3_helper.dir/clean:
 .PHONY : CMakeFiles/juce_vst3_helper.dir/clean
 
 CMakeFiles/juce_vst3_helper.dir/depend:
-	cd /home/marc/Projects/4ke/build_vst3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3/CMakeFiles/juce_vst3_helper.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/marc/Projects/4ke/build_vst3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marc/Projects/4ke /home/marc/Projects/4ke /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3/CMakeFiles/juce_vst3_helper.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/juce_vst3_helper.dir/depend
 

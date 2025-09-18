@@ -1,0 +1,371 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix bufs:  <http://lv2plug.in/ns/ext/buf-size#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix midi:  <http://lv2plug.in/ns/ext/midi#> .
+@prefix opts:  <http://lv2plug.in/ns/ext/options#> .
+@prefix param: <http://lv2plug.in/ns/ext/parameters#> .
+@prefix patch: <http://lv2plug.in/ns/ext/patch#> .
+@prefix pg:    <http://lv2plug.in/ns/ext/port-groups#> .
+@prefix plug:  <https://example.com/plugins/_4K_EQ:> .
+@prefix pprop: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rsz:   <http://lv2plug.in/ns/ext/resize-port#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix time:  <http://lv2plug.in/ns/ext/time#> .
+@prefix ui:    <http://lv2plug.in/ns/extensions/ui#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+plug:hpf_freq
+	a lv2:Parameter ;
+	rdfs:label "HPF Frequency" ;
+	rdfs:range atom:Float ;
+	lv2:default 20 ;
+	lv2:minimum 20 ;
+	lv2:maximum 500 .
+
+plug:lpf_freq
+	a lv2:Parameter ;
+	rdfs:label "LPF Frequency" ;
+	rdfs:range atom:Float ;
+	lv2:default 20000 ;
+	lv2:minimum 3000 ;
+	lv2:maximum 20000 .
+
+plug:lf_gain
+	a lv2:Parameter ;
+	rdfs:label "LF Gain" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum -20 ;
+	lv2:maximum 20 .
+
+plug:lf_freq
+	a lv2:Parameter ;
+	rdfs:label "LF Frequency" ;
+	rdfs:range atom:Float ;
+	lv2:default 100 ;
+	lv2:minimum 20 ;
+	lv2:maximum 600 .
+
+plug:lf_bell
+	a lv2:Parameter ;
+	rdfs:label "LF Bell Mode" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1	 ;
+	lv2:portProperty lv2:enumeration , lv2:toggled ;
+	lv2:scalePoint [
+		rdfs:label "Off" ;
+		rdf:value 0 ;
+	], [
+		rdfs:label "On" ;
+		rdf:value 1 ;
+	] .
+
+plug:lm_gain
+	a lv2:Parameter ;
+	rdfs:label "LM Gain" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum -20 ;
+	lv2:maximum 20 .
+
+plug:lm_freq
+	a lv2:Parameter ;
+	rdfs:label "LM Frequency" ;
+	rdfs:range atom:Float ;
+	lv2:default 600 ;
+	lv2:minimum 200 ;
+	lv2:maximum 2500 .
+
+plug:lm_q
+	a lv2:Parameter ;
+	rdfs:label "LM Q" ;
+	rdfs:range atom:Float ;
+	lv2:default 0.7 ;
+	lv2:minimum 0.5 ;
+	lv2:maximum 5 .
+
+plug:hm_gain
+	a lv2:Parameter ;
+	rdfs:label "HM Gain" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum -20 ;
+	lv2:maximum 20 .
+
+plug:hm_freq
+	a lv2:Parameter ;
+	rdfs:label "HM Frequency" ;
+	rdfs:range atom:Float ;
+	lv2:default 2000 ;
+	lv2:minimum 600 ;
+	lv2:maximum 7000 .
+
+plug:hm_q
+	a lv2:Parameter ;
+	rdfs:label "HM Q" ;
+	rdfs:range atom:Float ;
+	lv2:default 0.7 ;
+	lv2:minimum 0.5 ;
+	lv2:maximum 5 .
+
+plug:hf_gain
+	a lv2:Parameter ;
+	rdfs:label "HF Gain" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum -20 ;
+	lv2:maximum 20 .
+
+plug:hf_freq
+	a lv2:Parameter ;
+	rdfs:label "HF Frequency" ;
+	rdfs:range atom:Float ;
+	lv2:default 8000 ;
+	lv2:minimum 1500 ;
+	lv2:maximum 20000 .
+
+plug:hf_bell
+	a lv2:Parameter ;
+	rdfs:label "HF Bell Mode" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1	 ;
+	lv2:portProperty lv2:enumeration , lv2:toggled ;
+	lv2:scalePoint [
+		rdfs:label "Off" ;
+		rdf:value 0 ;
+	], [
+		rdfs:label "On" ;
+		rdf:value 1 ;
+	] .
+
+plug:eq_type
+	a lv2:Parameter ;
+	rdfs:label "EQ Type" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1	 ;
+	lv2:portProperty lv2:enumeration ;
+	lv2:scalePoint [
+		rdfs:label "Brown" ;
+		rdf:value 0 ;
+	], [
+		rdfs:label "Black" ;
+		rdf:value 1 ;
+	] .
+
+plug:bypass
+	a lv2:Parameter ;
+	rdfs:label "Bypass" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1	 ;
+	lv2:portProperty lv2:enumeration , lv2:toggled ;
+	lv2:scalePoint [
+		rdfs:label "Off" ;
+		rdf:value 0 ;
+	], [
+		rdfs:label "On" ;
+		rdf:value 1 ;
+	] .
+
+plug:output_gain
+	a lv2:Parameter ;
+	rdfs:label "Output Gain" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum -12 ;
+	lv2:maximum 12 .
+
+plug:saturation
+	a lv2:Parameter ;
+	rdfs:label "Saturation" ;
+	rdfs:range atom:Float ;
+	lv2:default 20 ;
+	lv2:minimum 0 ;
+	lv2:maximum 100 .
+
+plug:oversampling
+	a lv2:Parameter ;
+	rdfs:label "Oversampling" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1	 ;
+	lv2:portProperty lv2:enumeration ;
+	lv2:scalePoint [
+		rdfs:label "2x" ;
+		rdf:value 0 ;
+	], [
+		rdfs:label "4x" ;
+		rdf:value 1 ;
+	] .
+
+plug:input_group_1
+	a pg:InputGroup ;
+	lv2:name "Input" ;
+	lv2:symbol "input_group_1" .
+
+plug:output_group_1
+	a pg:OutputGroup ;
+	lv2:name "Output" ;
+	lv2:symbol "output_group_1" .
+
+<https://example.com/plugins/_4K_EQ>
+	ui:ui <https://example.com/plugins/_4K_EQ:UI> ;
+	a lv2:Plugin ;
+	doap:name "4K EQ" ;
+	doap:description "4K EQ" ;
+	lv2:minorVersion 0 ;
+	lv2:microVersion 0 ;
+	doap:maintainer [
+		a foaf:Person ;
+		foaf:name "AudioPlugins" ;
+		foaf:homepage <https://example.com> ;
+		foaf:mbox <info@example.com> ;
+	] ;
+	doap:release [
+		a doap:Version ;
+		doap:revision "1.0.0" ;
+	] ;
+	lv2:optionalFeature
+		lv2:hardRTCapable ;
+	lv2:extensionData
+		state:interface ;
+	lv2:requiredFeature
+		urid:map ,
+		opts:options ,
+		bufs:boundedBlockLength ;
+	pg:mainInput plug:input_group_1 ;
+	pg:mainOutput plug:output_group_1 ;
+	patch:writable
+		plug:hpf_freq ,
+		plug:lpf_freq ,
+		plug:lf_gain ,
+		plug:lf_freq ,
+		plug:lf_bell ,
+		plug:lm_gain ,
+		plug:lm_freq ,
+		plug:lm_q ,
+		plug:hm_gain ,
+		plug:hm_freq ,
+		plug:hm_q ,
+		plug:hf_gain ,
+		plug:hf_freq ,
+		plug:hf_bell ,
+		plug:eq_type ,
+		plug:bypass ,
+		plug:output_gain ,
+		plug:saturation ,
+		plug:oversampling ;
+	patch:readable
+		plug:hpf_freq ,
+		plug:lpf_freq ,
+		plug:lf_gain ,
+		plug:lf_freq ,
+		plug:lf_bell ,
+		plug:lm_gain ,
+		plug:lm_freq ,
+		plug:lm_q ,
+		plug:hm_gain ,
+		plug:hm_freq ,
+		plug:hm_q ,
+		plug:hf_gain ,
+		plug:hf_freq ,
+		plug:hf_bell ,
+		plug:eq_type ,
+		plug:bypass ,
+		plug:output_gain ,
+		plug:saturation ,
+		plug:oversampling ;
+	lv2:port [
+		a lv2:InputPort , lv2:AudioPort ;
+		lv2:index 0 ;
+		lv2:symbol "audio_in_1" ;
+		lv2:name "Audio In 1" ;
+		pg:group plug:input_group_1 ;
+		lv2:designation <http://lv2plug.in/ns/ext/port-groups#left> ;
+	] , [
+		a lv2:InputPort , lv2:AudioPort ;
+		lv2:index 1 ;
+		lv2:symbol "audio_in_2" ;
+		lv2:name "Audio In 2" ;
+		pg:group plug:input_group_1 ;
+		lv2:designation <http://lv2plug.in/ns/ext/port-groups#right> ;
+	] , [
+		a lv2:OutputPort , lv2:AudioPort ;
+		lv2:index 2 ;
+		lv2:symbol "audio_out_1" ;
+		lv2:name "Audio Out 1" ;
+		pg:group plug:output_group_1 ;
+		lv2:designation <http://lv2plug.in/ns/ext/port-groups#left> ;
+	] , [
+		a lv2:OutputPort , lv2:AudioPort ;
+		lv2:index 3 ;
+		lv2:symbol "audio_out_2" ;
+		lv2:name "Audio Out 2" ;
+		pg:group plug:output_group_1 ;
+		lv2:designation <http://lv2plug.in/ns/ext/port-groups#right> ;
+	] , [
+		a lv2:InputPort , atom:AtomPort ;
+		rsz:minimumSize 9560 ;
+		atom:bufferType atom:Sequence ;
+		atom:supports
+			patch:Message ,
+			time:Position ;
+		lv2:designation lv2:control ;
+		lv2:index 4 ;
+		lv2:symbol "in" ;
+		lv2:name "In" ;
+	] , [
+		a lv2:OutputPort , atom:AtomPort ;
+		rsz:minimumSize 9560 ;
+		atom:bufferType atom:Sequence ;
+		atom:supports
+			patch:Message ;
+		lv2:designation lv2:control ;
+		lv2:index 5 ;
+		lv2:symbol "out" ;
+		lv2:name "Out" ;
+	] , [
+		a lv2:OutputPort , lv2:ControlPort ;
+		lv2:designation lv2:latency ;
+		lv2:symbol "latency" ;
+		lv2:name "Latency" ;
+		lv2:index 6 ;
+		lv2:portProperty lv2:reportsLatency , lv2:integer , lv2:connectionOptional , pprop:notOnGUI ;
+		units:unit units:frame ;
+	] , [
+		a lv2:InputPort , lv2:ControlPort ;
+		lv2:designation lv2:freeWheeling ;
+		lv2:symbol "freeWheeling" ;
+		lv2:name "Free Wheeling" ;
+		lv2:default 0.0 ;
+		lv2:minimum 0.0 ;
+		lv2:maximum 1.0 ;
+		lv2:index 7 ;
+		lv2:portProperty lv2:toggled , lv2:connectionOptional , pprop:notOnGUI ;
+	] , [
+		a lv2:InputPort , lv2:ControlPort ;
+		lv2:designation lv2:enabled ;
+		lv2:symbol "enabled" ;
+		lv2:name "Enabled" ;
+		lv2:default 1.0 ;
+		lv2:minimum 0.0 ;
+		lv2:maximum 1.0 ;
+		lv2:index 8 ;
+		lv2:portProperty lv2:toggled , lv2:connectionOptional , pprop:notOnGUI ;
+	] ;
+	opts:supportedOption
+		bufs:maxBlockLength .

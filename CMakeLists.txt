@@ -1,24 +1,24 @@
 cmake_minimum_required(VERSION 3.15)
-project(SSL4KEQ VERSION 1.0.0)
+project(FourKEQ VERSION 1.0.0)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add JUCE subdirectory
-add_subdirectory(/home/marc/projects/JUCE ${CMAKE_CURRENT_BINARY_DIR}/JUCE)
+add_subdirectory(/home/marc/Projects/JUCE ${CMAKE_CURRENT_BINARY_DIR}/JUCE)
 
 # Define our VST3 and LV2 plugin target
-juce_add_plugin(SSL4KEQ
-    PLUGIN_NAME "SSL 4000 EQ"
-    PLUGIN_CODE SSL4
+juce_add_plugin(FourKEQ
+    PLUGIN_NAME "4K EQ"
+    PLUGIN_CODE FKEQ
     FORMATS VST3 LV2 AU Standalone
-    PRODUCT_NAME "SSL 4000 EQ"
-    COMPANY_NAME "SSL Emulation"
+    PRODUCT_NAME "4K EQ"
+    COMPANY_NAME "AudioPlugins"
     COMPANY_WEBSITE "https://example.com"
     COMPANY_EMAIL "info@example.com"
-    PLUGIN_MANUFACTURER_CODE SSLm
-    PLUGIN_CODE SSL4
+    PLUGIN_MANUFACTURER_CODE APlu
+    PLUGIN_CODE FKEQ
     IS_SYNTH FALSE
     NEEDS_MIDI_INPUT FALSE
     NEEDS_MIDI_OUTPUT FALSE
@@ -28,35 +28,32 @@ juce_add_plugin(SSL4KEQ
     VST3_CATEGORIES Fx EQ
     AU_MAIN_TYPE kAudioUnitType_Effect
     VST2_CATEGORY kPlugCategEffect
-    LV2_URI https://example.com/plugins/ssl4keq
-    LV2_SHARED_LIBRARY_NAME SSL4KEQ
+    LV2_URI https://example.com/plugins/fourkeq
+    LV2_SHARED_LIBRARY_NAME FourKEQ
 )
 
 # Generate JUCE header
-juce_generate_juce_header(SSL4KEQ)
+juce_generate_juce_header(FourKEQ)
 
 # Add source files
-target_sources(SSL4KEQ
+target_sources(FourKEQ
     PRIVATE
-        SSL4KEQ.cpp
-        SSL4KEQ.h
+        FourKEQ.cpp
+        FourKEQ.h
         PluginEditor.cpp
         PluginEditor.h
-        SSLLookAndFeel.cpp
-        SSLLookAndFeel.h
-        LV2InlineDisplay.h
-        LV2InlineDisplay.cpp
-        lv2_descriptor_wrapper.c
+        FourKLookAndFeel.cpp
+        FourKLookAndFeel.h
 )
 
 # Set include directories
-target_include_directories(SSL4KEQ
+target_include_directories(FourKEQ
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 # Compile definitions
-target_compile_definitions(SSL4KEQ
+target_compile_definitions(FourKEQ
     PUBLIC
         JUCE_WEB_BROWSER=0
         JUCE_USE_CURL=0
@@ -67,7 +64,7 @@ target_compile_definitions(SSL4KEQ
 )
 
 # Link with JUCE modules
-target_link_libraries(SSL4KEQ
+target_link_libraries(FourKEQ
     PRIVATE
         juce::juce_audio_basics
         juce::juce_audio_devices
@@ -90,19 +87,19 @@ target_link_libraries(SSL4KEQ
 
 # Platform-specific settings
 if(MSVC)
-    target_compile_options(SSL4KEQ PRIVATE /W4 /WX-)
+    target_compile_options(FourKEQ PRIVATE /W4 /WX-)
 else()
-    target_compile_options(SSL4KEQ PRIVATE -Wall -Wextra -Wpedantic)
+    target_compile_options(FourKEQ PRIVATE -Wall -Wextra -Wpedantic)
 endif()
 
 # Set binary output directory
-set_target_properties(SSL4KEQ PROPERTIES
+set_target_properties(FourKEQ PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
     LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
 )
 # Add linker wrapping for LV2 inline display support
-if(TARGET SSL4KEQ_LV2)
-    target_link_options(SSL4KEQ_LV2 PRIVATE
+if(TARGET FourKEQ_LV2)
+    target_link_options(FourKEQ_LV2 PRIVATE
         -Wl,--wrap=lv2_descriptor
     )
 endif()

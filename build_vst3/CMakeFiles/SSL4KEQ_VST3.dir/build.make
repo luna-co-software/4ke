@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marc/Projects/4ke/build_vst3
+CMAKE_SOURCE_DIR = /home/marc/Projects/4ke
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/marc/Projects/4ke/build_vst3
@@ -195,30 +195,31 @@ SSL4KEQ_VST3_OBJECTS = \
 # External object files for target SSL4KEQ_VST3
 SSL4KEQ_VST3_EXTERNAL_OBJECTS =
 
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.o
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.o
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.o
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/build.make
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: /usr/lib/x86_64-linux-gnu/libasound.so
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: /usr/lib/x86_64-linux-gnu/libfontconfig.so
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: /usr/lib/x86_64-linux-gnu/libfreetype.so
-SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared module \"SSL4KEQ_artefacts/Release/VST3/SSL 4000 EQ.vst3/Contents/x86_64-linux/SSL 4000 EQ.so\""
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.o
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.o
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.o
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/build.make
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: /usr/lib/x86_64-linux-gnu/libasound.so
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: /usr/lib/x86_64-linux-gnu/libfreetype.so
+bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so: CMakeFiles/SSL4KEQ_VST3.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared module \"bin/VST3/SSL 4000 EQ.vst3/Contents/x86_64-linux/SSL 4000 EQ.so\""
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SSL4KEQ_VST3.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E echo removing\ moduleinfo.json
-	/usr/bin/cmake -E remove -f /home/marc/Projects/4ke/build_vst3/SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/moduleinfo.json /home/marc/Projects/4ke/build_vst3/SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/Resources/moduleinfo.json
-	/usr/bin/cmake -E echo "creating /home/marc/Projects/4ke/build_vst3/SSL4KEQ_artefacts/Release/VST3/SSL 4000 EQ.vst3/Contents/Resources/moduleinfo.json"
-	/usr/bin/cmake -E make_directory "/home/marc/Projects/4ke/build_vst3/SSL4KEQ_artefacts/Release/VST3/SSL 4000 EQ.vst3/Contents/Resources"
-	./juce_vst3_helper -create -version 1.0.0 -path "/home/marc/Projects/4ke/build_vst3/SSL4KEQ_artefacts/Release/VST3/SSL 4000 EQ.vst3" -output "/home/marc/Projects/4ke/build_vst3/SSL4KEQ_artefacts/Release/VST3/SSL 4000 EQ.vst3/Contents/Resources/moduleinfo.json"
+	/usr/bin/cmake -E remove -f /home/marc/Projects/4ke/build_vst3/bin/VST3/SSL\ 4000\ EQ.vst3/Contents/moduleinfo.json /home/marc/Projects/4ke/build_vst3/bin/VST3/SSL\ 4000\ EQ.vst3/Contents/Resources/moduleinfo.json
+	/usr/bin/cmake -E echo "creating /home/marc/Projects/4ke/build_vst3/bin/VST3/SSL 4000 EQ.vst3/Contents/Resources/moduleinfo.json"
+	/usr/bin/cmake -E make_directory "/home/marc/Projects/4ke/build_vst3/bin/VST3/SSL 4000 EQ.vst3/Contents/Resources"
+	./juce_vst3_helper -create -version 1.0.0 -path "/home/marc/Projects/4ke/build_vst3/bin/VST3/SSL 4000 EQ.vst3" -output "/home/marc/Projects/4ke/build_vst3/bin/VST3/SSL 4000 EQ.vst3/Contents/Resources/moduleinfo.json"
+	/usr/bin/cmake "-Dsrc=/home/marc/Projects/4ke/build_vst3/bin/VST3/SSL 4000 EQ.vst3" -Ddest=/home/marc/.vst3 -P /home/marc/Projects/JUCE/extras/Build/CMake/copyDir.cmake
 
 # Rule to build all files generated by this target.
-CMakeFiles/SSL4KEQ_VST3.dir/build: SSL4KEQ_artefacts/Release/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so
+CMakeFiles/SSL4KEQ_VST3.dir/build: bin/VST3/SSL\ 4000\ EQ.vst3/Contents/x86_64-linux/SSL\ 4000\ EQ.so
 .PHONY : CMakeFiles/SSL4KEQ_VST3.dir/build
 
 CMakeFiles/SSL4KEQ_VST3.dir/clean:
@@ -226,6 +227,6 @@ CMakeFiles/SSL4KEQ_VST3.dir/clean:
 .PHONY : CMakeFiles/SSL4KEQ_VST3.dir/clean
 
 CMakeFiles/SSL4KEQ_VST3.dir/depend:
-	cd /home/marc/Projects/4ke/build_vst3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3/CMakeFiles/SSL4KEQ_VST3.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/marc/Projects/4ke/build_vst3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marc/Projects/4ke /home/marc/Projects/4ke /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3/CMakeFiles/SSL4KEQ_VST3.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/SSL4KEQ_VST3.dir/depend
 

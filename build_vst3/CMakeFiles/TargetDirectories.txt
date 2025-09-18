@@ -1,6 +1,9 @@
-/home/marc/Projects/4ke/build_vst3/CMakeFiles/SSL4KEQ.dir
-/home/marc/Projects/4ke/build_vst3/CMakeFiles/SSL4KEQ_All.dir
-/home/marc/Projects/4ke/build_vst3/CMakeFiles/SSL4KEQ_VST3.dir
+/home/marc/Projects/4ke/build_vst3/CMakeFiles/FourKEQ.dir
+/home/marc/Projects/4ke/build_vst3/CMakeFiles/FourKEQ_All.dir
+/home/marc/Projects/4ke/build_vst3/CMakeFiles/FourKEQ_Standalone.dir
+/home/marc/Projects/4ke/build_vst3/CMakeFiles/FourKEQ_LV2.dir
+/home/marc/Projects/4ke/build_vst3/CMakeFiles/juce_lv2_helper.dir
+/home/marc/Projects/4ke/build_vst3/CMakeFiles/FourKEQ_VST3.dir
 /home/marc/Projects/4ke/build_vst3/CMakeFiles/juce_vst3_helper.dir
 /home/marc/Projects/4ke/build_vst3/CMakeFiles/edit_cache.dir
 /home/marc/Projects/4ke/build_vst3/CMakeFiles/rebuild_cache.dir

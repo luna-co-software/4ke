@@ -54,7 +54,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marc/Projects/4ke/build_vst3
+CMAKE_SOURCE_DIR = /home/marc/Projects/4ke
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/marc/Projects/4ke/build_vst3
@@ -63,8 +63,11 @@ CMAKE_BINARY_DIR = /home/marc/Projects/4ke/build_vst3
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/SSL4KEQ.dir/all
-all: CMakeFiles/SSL4KEQ_VST3.dir/all
+all: CMakeFiles/FourKEQ.dir/all
+all: CMakeFiles/FourKEQ_Standalone.dir/all
+all: CMakeFiles/FourKEQ_LV2.dir/all
+all: CMakeFiles/juce_lv2_helper.dir/all
+all: CMakeFiles/FourKEQ_VST3.dir/all
 all: CMakeFiles/juce_vst3_helper.dir/all
 all: JUCE/all
 .PHONY : all
@@ -74,9 +77,12 @@ preinstall: JUCE/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/SSL4KEQ.dir/clean
-clean: CMakeFiles/SSL4KEQ_All.dir/clean
-clean: CMakeFiles/SSL4KEQ_VST3.dir/clean
+clean: CMakeFiles/FourKEQ.dir/clean
+clean: CMakeFiles/FourKEQ_All.dir/clean
+clean: CMakeFiles/FourKEQ_Standalone.dir/clean
+clean: CMakeFiles/FourKEQ_LV2.dir/clean
+clean: CMakeFiles/juce_lv2_helper.dir/clean
+clean: CMakeFiles/FourKEQ_VST3.dir/clean
 clean: CMakeFiles/juce_vst3_helper.dir/clean
 clean: JUCE/clean
 .PHONY : clean
@@ -145,83 +151,164 @@ JUCE/modules/clean:
 .PHONY : JUCE/modules/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SSL4KEQ.dir
+# Target rules for target CMakeFiles/FourKEQ.dir
 
 # All Build rule for target.
-CMakeFiles/SSL4KEQ.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target SSL4KEQ"
-.PHONY : CMakeFiles/SSL4KEQ.dir/all
+CMakeFiles/FourKEQ.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target FourKEQ"
+.PHONY : CMakeFiles/FourKEQ.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SSL4KEQ.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 23
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SSL4KEQ.dir/all
+CMakeFiles/FourKEQ.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 22
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FourKEQ.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 0
-.PHONY : CMakeFiles/SSL4KEQ.dir/rule
+.PHONY : CMakeFiles/FourKEQ.dir/rule
 
 # Convenience name for target.
-SSL4KEQ: CMakeFiles/SSL4KEQ.dir/rule
-.PHONY : SSL4KEQ
+FourKEQ: CMakeFiles/FourKEQ.dir/rule
+.PHONY : FourKEQ
 
 # clean rule for target.
-CMakeFiles/SSL4KEQ.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/clean
-.PHONY : CMakeFiles/SSL4KEQ.dir/clean
+CMakeFiles/FourKEQ.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/clean
+.PHONY : CMakeFiles/FourKEQ.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SSL4KEQ_All.dir
+# Target rules for target CMakeFiles/FourKEQ_All.dir
 
 # All Build rule for target.
-CMakeFiles/SSL4KEQ_All.dir/all: CMakeFiles/SSL4KEQ_VST3.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_All.dir/build.make CMakeFiles/SSL4KEQ_All.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_All.dir/build.make CMakeFiles/SSL4KEQ_All.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num= "Built target SSL4KEQ_All"
-.PHONY : CMakeFiles/SSL4KEQ_All.dir/all
+CMakeFiles/FourKEQ_All.dir/all: CMakeFiles/FourKEQ_Standalone.dir/all
+CMakeFiles/FourKEQ_All.dir/all: CMakeFiles/FourKEQ_LV2.dir/all
+CMakeFiles/FourKEQ_All.dir/all: CMakeFiles/FourKEQ_VST3.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_All.dir/build.make CMakeFiles/FourKEQ_All.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_All.dir/build.make CMakeFiles/FourKEQ_All.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num= "Built target FourKEQ_All"
+.PHONY : CMakeFiles/FourKEQ_All.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SSL4KEQ_All.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 34
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SSL4KEQ_All.dir/all
+CMakeFiles/FourKEQ_All.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 53
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FourKEQ_All.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 0
-.PHONY : CMakeFiles/SSL4KEQ_All.dir/rule
+.PHONY : CMakeFiles/FourKEQ_All.dir/rule
 
 # Convenience name for target.
-SSL4KEQ_All: CMakeFiles/SSL4KEQ_All.dir/rule
-.PHONY : SSL4KEQ_All
+FourKEQ_All: CMakeFiles/FourKEQ_All.dir/rule
+.PHONY : FourKEQ_All
 
 # clean rule for target.
-CMakeFiles/SSL4KEQ_All.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_All.dir/build.make CMakeFiles/SSL4KEQ_All.dir/clean
-.PHONY : CMakeFiles/SSL4KEQ_All.dir/clean
+CMakeFiles/FourKEQ_All.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_All.dir/build.make CMakeFiles/FourKEQ_All.dir/clean
+.PHONY : CMakeFiles/FourKEQ_All.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SSL4KEQ_VST3.dir
+# Target rules for target CMakeFiles/FourKEQ_Standalone.dir
 
 # All Build rule for target.
-CMakeFiles/SSL4KEQ_VST3.dir/all: CMakeFiles/juce_vst3_helper.dir/all
-CMakeFiles/SSL4KEQ_VST3.dir/all: CMakeFiles/SSL4KEQ.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32 "Built target SSL4KEQ_VST3"
-.PHONY : CMakeFiles/SSL4KEQ_VST3.dir/all
+CMakeFiles/FourKEQ_Standalone.dir/all: CMakeFiles/FourKEQ.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40 "Built target FourKEQ_Standalone"
+.PHONY : CMakeFiles/FourKEQ_Standalone.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SSL4KEQ_VST3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 34
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SSL4KEQ_VST3.dir/all
+CMakeFiles/FourKEQ_Standalone.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 31
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FourKEQ_Standalone.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 0
-.PHONY : CMakeFiles/SSL4KEQ_VST3.dir/rule
+.PHONY : CMakeFiles/FourKEQ_Standalone.dir/rule
 
 # Convenience name for target.
-SSL4KEQ_VST3: CMakeFiles/SSL4KEQ_VST3.dir/rule
-.PHONY : SSL4KEQ_VST3
+FourKEQ_Standalone: CMakeFiles/FourKEQ_Standalone.dir/rule
+.PHONY : FourKEQ_Standalone
 
 # clean rule for target.
-CMakeFiles/SSL4KEQ_VST3.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/clean
-.PHONY : CMakeFiles/SSL4KEQ_VST3.dir/clean
+CMakeFiles/FourKEQ_Standalone.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/clean
+.PHONY : CMakeFiles/FourKEQ_Standalone.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/FourKEQ_LV2.dir
+
+# All Build rule for target.
+CMakeFiles/FourKEQ_LV2.dir/all: CMakeFiles/FourKEQ.dir/all
+CMakeFiles/FourKEQ_LV2.dir/all: CMakeFiles/juce_lv2_helper.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31 "Built target FourKEQ_LV2"
+.PHONY : CMakeFiles/FourKEQ_LV2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/FourKEQ_LV2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 33
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FourKEQ_LV2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 0
+.PHONY : CMakeFiles/FourKEQ_LV2.dir/rule
+
+# Convenience name for target.
+FourKEQ_LV2: CMakeFiles/FourKEQ_LV2.dir/rule
+.PHONY : FourKEQ_LV2
+
+# clean rule for target.
+CMakeFiles/FourKEQ_LV2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/clean
+.PHONY : CMakeFiles/FourKEQ_LV2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/juce_lv2_helper.dir
+
+# All Build rule for target.
+CMakeFiles/juce_lv2_helper.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juce_lv2_helper.dir/build.make CMakeFiles/juce_lv2_helper.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juce_lv2_helper.dir/build.make CMakeFiles/juce_lv2_helper.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=50,51 "Built target juce_lv2_helper"
+.PHONY : CMakeFiles/juce_lv2_helper.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/juce_lv2_helper.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/juce_lv2_helper.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 0
+.PHONY : CMakeFiles/juce_lv2_helper.dir/rule
+
+# Convenience name for target.
+juce_lv2_helper: CMakeFiles/juce_lv2_helper.dir/rule
+.PHONY : juce_lv2_helper
+
+# clean rule for target.
+CMakeFiles/juce_lv2_helper.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juce_lv2_helper.dir/build.make CMakeFiles/juce_lv2_helper.dir/clean
+.PHONY : CMakeFiles/juce_lv2_helper.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/FourKEQ_VST3.dir
+
+# All Build rule for target.
+CMakeFiles/FourKEQ_VST3.dir/all: CMakeFiles/FourKEQ.dir/all
+CMakeFiles/FourKEQ_VST3.dir/all: CMakeFiles/juce_vst3_helper.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49 "Built target FourKEQ_VST3"
+.PHONY : CMakeFiles/FourKEQ_VST3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/FourKEQ_VST3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 33
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FourKEQ_VST3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marc/Projects/4ke/build_vst3/CMakeFiles 0
+.PHONY : CMakeFiles/FourKEQ_VST3.dir/rule
+
+# Convenience name for target.
+FourKEQ_VST3: CMakeFiles/FourKEQ_VST3.dir/rule
+.PHONY : FourKEQ_VST3
+
+# clean rule for target.
+CMakeFiles/FourKEQ_VST3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/clean
+.PHONY : CMakeFiles/FourKEQ_VST3.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/juce_vst3_helper.dir
@@ -230,7 +317,7 @@ CMakeFiles/SSL4KEQ_VST3.dir/clean:
 CMakeFiles/juce_vst3_helper.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/juce_vst3_helper.dir/build.make CMakeFiles/juce_vst3_helper.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/juce_vst3_helper.dir/build.make CMakeFiles/juce_vst3_helper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=33,34 "Built target juce_vst3_helper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=52,53 "Built target juce_vst3_helper"
 .PHONY : CMakeFiles/juce_vst3_helper.dir/all
 
 # Build rule for subdir invocation for target.

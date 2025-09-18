@@ -22,7 +22,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -97,8 +97,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:UNINITIALIZED=TRUE
+//Enable/Disable output of compile commands during generation.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/marc/Projects/4ke/build_vst3/CMakeFiles/pkgRedirects
@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=SSL4KEQ_VST3
+CMAKE_PROJECT_NAME:STATIC=FourKEQ
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0.0
@@ -231,6 +231,15 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+FourKEQ_BINARY_DIR:STATIC=/home/marc/Projects/4ke/build_vst3
+
+//Value Computed by CMake
+FourKEQ_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+FourKEQ_SOURCE_DIR:STATIC=/home/marc/Projects/4ke
+
+//Value Computed by CMake
 JUCE_BINARY_DIR:STATIC=/home/marc/Projects/4ke/build_vst3/JUCE
 
 //Add build targets for the DemoRunner and PIPs
@@ -272,15 +281,6 @@ PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
-
-//Value Computed by CMake
-SSL4KEQ_VST3_BINARY_DIR:STATIC=/home/marc/Projects/4ke/build_vst3
-
-//Value Computed by CMake
-SSL4KEQ_VST3_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SSL4KEQ_VST3_SOURCE_DIR:STATIC=/home/marc/Projects/4ke/build_vst3
 
 //Path to a library.
 pkgcfg_lib_JUCE_BROWSER_LINUX_DEPS_atk-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libatk-1.0.so
@@ -470,6 +470,8 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
+CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -484,7 +486,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/marc/Projects/4ke/build_vst3
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/marc/Projects/4ke
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
@@ -657,7 +659,7 @@ __pkg_config_checked_juce_graphics_LINUX_DEPS:INTERNAL=1
 __pkg_config_checked_juce_opengl_LINUX_DEPS:INTERNAL=1
 __pkg_config_checked_package_to_be_found:INTERNAL=1
 //Result of TRY_COMPILE
-compile_result:INTERNAL=FALSE
+compile_result:INTERNAL=TRUE
 juce_audio_devices_LINUX_DEPS_CFLAGS:INTERNAL=-I/usr/include
 juce_audio_devices_LINUX_DEPS_CFLAGS_I:INTERNAL=
 juce_audio_devices_LINUX_DEPS_CFLAGS_OTHER:INTERNAL=

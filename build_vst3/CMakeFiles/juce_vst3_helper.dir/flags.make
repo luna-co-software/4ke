@@ -6,5 +6,5 @@ CXX_DEFINES = -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DNDEBUG=1 -D_NDEBUG=1
 
 CXX_INCLUDES = -I/home/marc/Projects/JUCE/modules/juce_audio_processors/format_types/VST3_SDK -I/home/marc/Projects/JUCE/modules
 
-CXX_FLAGS = -O3 -DNDEBUG -O3
+CXX_FLAGS = -std=gnu++17
 

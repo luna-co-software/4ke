@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marc/Projects/4ke/build_vst3
+CMAKE_SOURCE_DIR = /home/marc/Projects/4ke
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/marc/Projects/4ke/build_vst3

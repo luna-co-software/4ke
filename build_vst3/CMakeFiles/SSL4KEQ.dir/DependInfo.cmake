@@ -9,10 +9,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o" "gcc" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o.d"
-  "/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o.d"
-  "/home/marc/Projects/4ke/PluginEditor.cpp" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o.d"
-  "/home/marc/Projects/4ke/SSL4KEQ.cpp" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o.d"
-  "/home/marc/Projects/4ke/SSLLookAndFeel.cpp" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o.d"
+  "/home/marc/Projects/4ke/lv2_descriptor_wrapper.c" "CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o" "gcc" "CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o.d"
+  "/home/marc/Projects/4ke/LV2InlineDisplay.cpp" "CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o.d"
+  "/home/marc/Projects/4ke/PluginEditor.cpp" "CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o.d"
+  "/home/marc/Projects/4ke/SSL4KEQ.cpp" "CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o.d"
+  "/home/marc/Projects/4ke/SSLLookAndFeel.cpp" "CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o.d"
   "/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o.d"
   "/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o.d"
   "/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o" "gcc" "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o.d"

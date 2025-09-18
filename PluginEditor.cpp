@@ -1,12 +1,12 @@
 #include "PluginEditor.h"
 
 //==============================================================================
-SSL4KEQEditor::SSL4KEQEditor(SSL4KEQ& p)
+FourKEQEditor::FourKEQEditor(FourKEQ& p)
     : AudioProcessorEditor(&p), audioProcessor(p)
 {
-    setLookAndFeel(&sslLookAndFeel);
+    setLookAndFeel(&lookAndFeel);
 
-    // Set editor size - authentic SSL console proportions
+    // Set editor size - professional console proportions
     setSize(920, 420);
     setResizable(false, false);
 
@@ -33,7 +33,7 @@ SSL4KEQEditor::SSL4KEQEditor(SSL4KEQ& p)
     lfFreqAttachment = std::make_unique<SliderAttachment>(
         audioProcessor.parameters, "lf_freq", lfFreqSlider);
 
-    setupSSLButton(lfBellButton, "BELL");
+    setupButton(lfBellButton, "BELL");
     lfBellAttachment = std::make_unique<ButtonAttachment>(
         audioProcessor.parameters, "lf_bell", lfBellButton);
 
@@ -72,12 +72,12 @@ SSL4KEQEditor::SSL4KEQEditor(SSL4KEQ& p)
     hfFreqAttachment = std::make_unique<SliderAttachment>(
         audioProcessor.parameters, "hf_freq", hfFreqSlider);
 
-    setupSSLButton(hfBellButton, "BELL");
+    setupButton(hfBellButton, "BELL");
     hfBellAttachment = std::make_unique<ButtonAttachment>(
         audioProcessor.parameters, "hf_bell", hfBellButton);
 
     // Master Section
-    setupSSLButton(bypassButton, "IN");
+    setupButton(bypassButton, "IN");
     bypassButton.setClickingTogglesState(true);
     bypassAttachment = std::make_unique<ButtonAttachment>(
         audioProcessor.parameters, "bypass", bypassButton);
@@ -113,13 +113,13 @@ SSL4KEQEditor::SSL4KEQEditor(SSL4KEQ& p)
     startTimerHz(30);
 }
 
-SSL4KEQEditor::~SSL4KEQEditor()
+FourKEQEditor::~FourKEQEditor()
 {
     setLookAndFeel(nullptr);
 }
 
 //==============================================================================
-void SSL4KEQEditor::paint(juce::Graphics& g)
+void FourKEQEditor::paint(juce::Graphics& g)
 {
     // SSL console background - authentic dark charcoal
     g.fillAll(juce::Colour(0xff2d2d2d));
@@ -132,25 +132,25 @@ void SSL4KEQEditor::paint(juce::Graphics& g)
     g.setGradientFill(backgroundGradient);
     g.fillRect(bounds);
 
-    // Top section - SSL branding area
+    // Top section - branding area
     auto topSection = bounds.removeFromTop(50);
     g.setColour(juce::Colour(0xff1a1a1a));
     g.fillRect(topSection);
 
-    // SSL-style beveled edge
+    // Beveled edge
     g.setColour(juce::Colour(0xff4a4a4a));
     g.drawLine(0, topSection.getBottom(), bounds.getWidth(), topSection.getBottom(), 2);
 
-    // SSL Logo and title
+    // Logo and title
     g.setColour(juce::Colour(0xffe0e0e0));
     g.setFont(juce::Font(juce::FontOptions(24.0f).withStyle("Bold")));
-    g.drawText("SSL 4000 E", topSection.removeFromLeft(200),
+    g.drawText("4K EQ", topSection.removeFromLeft(200),
                juce::Justification::centred);
 
     // Series indicator
     g.setFont(juce::Font(juce::FontOptions(16.0f)));
     g.setColour(juce::Colour(0xffa0a0a0));
-    g.drawText("SERIES EQUALISER", topSection.removeFromLeft(200),
+    g.drawText("EQUALIZER", topSection.removeFromLeft(200),
                juce::Justification::centred);
 
     // EQ Type indicator with color coding
@@ -166,7 +166,7 @@ void SSL4KEQEditor::paint(juce::Graphics& g)
     // Draw section panels
     bounds = getLocalBounds().withTrimmedTop(55);
 
-    // Section dividers - vertical lines SSL-style
+    // Section dividers - vertical lines
     g.setColour(juce::Colour(0xff1a1a1a));
 
     // Filters section divider
@@ -253,7 +253,7 @@ void SSL4KEQEditor::paint(juce::Graphics& g)
     g.drawText("PWR", 20, 12, 30, 15, juce::Justification::centredLeft);
 }
 
-void SSL4KEQEditor::resized()
+void FourKEQEditor::resized()
 {
     auto bounds = getLocalBounds();
     bounds.removeFromTop(60);  // Space for header
@@ -353,7 +353,7 @@ void SSL4KEQEditor::resized()
     oversamplingSelector.setBounds(masterSection.removeFromTop(30).withSizeKeepingCentre(80, 25));
 }
 
-void SSL4KEQEditor::timerCallback()
+void FourKEQEditor::timerCallback()
 {
     // Update UI based on EQ type
     bool isBlack = eqTypeParam->load() > 0.5f;
@@ -366,26 +366,36 @@ void SSL4KEQEditor::timerCallback()
 }
 
 //==============================================================================
-void SSL4KEQEditor::setupKnob(juce::Slider& slider, const juce::String& paramID,
+void FourKEQEditor::setupKnob(juce::Slider& slider, const juce::String& paramID,
                               const juce::String& label, bool centerDetented)
 {
     slider.setSliderStyle(juce::Slider::RotaryVerticalDrag);
     slider.setTextBoxStyle(juce::Slider::NoTextBox, false, 0, 0);
     slider.setPopupDisplayEnabled(false, false, this);
 
-    // SSL-style rotation range
+    // Professional rotation range
     slider.setRotaryParameters(juce::MathConstants<float>::pi * 1.25f,
                                juce::MathConstants<float>::pi * 2.75f, true);
 
-    // Different colors for different knob types
-    if (label.contains("GAIN") || label.contains("OUTPUT")) {
-        slider.setColour(juce::Slider::rotarySliderFillColourId, juce::Colour(0xff4080ff));
-    } else if (label.contains("FREQ") || label.contains("HPF") || label.contains("LPF")) {
-        slider.setColour(juce::Slider::rotarySliderFillColourId, juce::Colour(0xffff8040));
+    // Color code knobs like the reference image
+    if (label.contains("GAIN")) {
+        // Red for gain knobs
+        slider.setColour(juce::Slider::rotarySliderFillColourId, juce::Colour(0xffdc3545));
+    } else if (label.contains("FREQ")) {
+        // Green for frequency knobs
+        slider.setColour(juce::Slider::rotarySliderFillColourId, juce::Colour(0xff28a745));
     } else if (label.contains("Q")) {
-        slider.setColour(juce::Slider::rotarySliderFillColourId, juce::Colour(0xff40ff80));
+        // Blue for Q knobs
+        slider.setColour(juce::Slider::rotarySliderFillColourId, juce::Colour(0xff007bff));
+    } else if (label.contains("HPF") || label.contains("LPF")) {
+        // Brown/orange for filters
+        slider.setColour(juce::Slider::rotarySliderFillColourId, juce::Colour(0xffb8860b));
+    } else if (label.contains("OUTPUT")) {
+        // Blue for output
+        slider.setColour(juce::Slider::rotarySliderFillColourId, juce::Colour(0xff007bff));
     } else if (label.contains("SAT")) {
-        slider.setColour(juce::Slider::rotarySliderFillColourId, juce::Colour(0xffff4040));
+        // Orange for saturation
+        slider.setColour(juce::Slider::rotarySliderFillColourId, juce::Colour(0xffff8c00));
     }
 
     if (centerDetented) {
@@ -405,12 +415,12 @@ void SSL4KEQEditor::setupKnob(juce::Slider& slider, const juce::String& paramID,
     knobLabels.push_back(std::move(knobLabel));
 }
 
-void SSL4KEQEditor::setupSSLButton(juce::ToggleButton& button, const juce::String& text)
+void FourKEQEditor::setupButton(juce::ToggleButton& button, const juce::String& text)
 {
     button.setButtonText(text);
     button.setClickingTogglesState(true);
 
-    // SSL-style button colors
+    // Professional button colors
     button.setColour(juce::TextButton::buttonColourId, juce::Colour(0xff404040));
     button.setColour(juce::TextButton::buttonOnColourId, juce::Colour(0xffff3030));
     button.setColour(juce::TextButton::textColourOffId, juce::Colour(0xffe0e0e0));
@@ -419,7 +429,7 @@ void SSL4KEQEditor::setupSSLButton(juce::ToggleButton& button, const juce::Strin
     addAndMakeVisible(button);
 }
 
-void SSL4KEQEditor::drawKnobMarkings(juce::Graphics& g)
+void FourKEQEditor::drawKnobMarkings(juce::Graphics& g)
 {
     // This would draw scale markings around knobs
     // Left as placeholder for detailed scale graphics

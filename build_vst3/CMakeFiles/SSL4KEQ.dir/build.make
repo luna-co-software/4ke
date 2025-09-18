@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marc/Projects/4ke/build_vst3
+CMAKE_SOURCE_DIR = /home/marc/Projects/4ke
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/marc/Projects/4ke/build_vst3
@@ -73,66 +73,80 @@ SSL4KEQ_artefacts/JuceLibraryCode/JuceHeader.h: SSL4KEQ_artefacts/JuceLibraryCod
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating SSL4KEQ_artefacts/JuceLibraryCode/JuceHeader.h"
 	JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide header /home/marc/Projects/4ke/build_vst3/SSL4KEQ_artefacts/JuceLibraryCode/Release/Defs.txt /home/marc/Projects/4ke/build_vst3/SSL4KEQ_artefacts/JuceLibraryCode/JuceHeader.h
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o: /home/marc/Projects/4ke/SSL4KEQ.cpp
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o -c /home/marc/Projects/4ke/SSL4KEQ.cpp
+CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
+CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o: /home/marc/Projects/4ke/SSL4KEQ.cpp
+CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o -MF CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o -c /home/marc/Projects/4ke/SSL4KEQ.cpp
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/4ke/SSL4KEQ.cpp > CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.i
+CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/4ke/SSL4KEQ.cpp > CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.i
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/4ke/SSL4KEQ.cpp -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.s
+CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/4ke/SSL4KEQ.cpp -o CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.s
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o: /home/marc/Projects/4ke/PluginEditor.cpp
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o -c /home/marc/Projects/4ke/PluginEditor.cpp
+CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
+CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o: /home/marc/Projects/4ke/PluginEditor.cpp
+CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o -MF CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o -c /home/marc/Projects/4ke/PluginEditor.cpp
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/4ke/PluginEditor.cpp > CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.i
+CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/4ke/PluginEditor.cpp > CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.i
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/4ke/PluginEditor.cpp -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.s
+CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/4ke/PluginEditor.cpp -o CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.s
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o: /home/marc/Projects/4ke/SSLLookAndFeel.cpp
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o -c /home/marc/Projects/4ke/SSLLookAndFeel.cpp
+CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
+CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o: /home/marc/Projects/4ke/SSLLookAndFeel.cpp
+CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o -MF CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o -c /home/marc/Projects/4ke/SSLLookAndFeel.cpp
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/4ke/SSLLookAndFeel.cpp > CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.i
+CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/4ke/SSLLookAndFeel.cpp > CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.i
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/4ke/SSLLookAndFeel.cpp -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.s
+CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/4ke/SSLLookAndFeel.cpp -o CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.s
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o: /home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o -c /home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp
+CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
+CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o: /home/marc/Projects/4ke/LV2InlineDisplay.cpp
+CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o -MF CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o -c /home/marc/Projects/4ke/LV2InlineDisplay.cpp
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp > CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.i
+CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/4ke/LV2InlineDisplay.cpp > CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.i
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.s
+CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/4ke/LV2InlineDisplay.cpp -o CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.s
+
+CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o: CMakeFiles/SSL4KEQ.dir/flags.make
+CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o: /home/marc/Projects/4ke/lv2_descriptor_wrapper.c
+CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o -MF CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o.d -o CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o -c /home/marc/Projects/4ke/lv2_descriptor_wrapper.c
+
+CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/marc/Projects/4ke/lv2_descriptor_wrapper.c > CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.i
+
+CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/marc/Projects/4ke/lv2_descriptor_wrapper.c -o CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.s
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o: /home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o -c /home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.i: cmake_force
@@ -146,7 +160,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juc
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o: /home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o -c /home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.i: cmake_force
@@ -160,7 +174,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juc
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o: /home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o -c /home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.i: cmake_force
@@ -174,7 +188,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juc
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o: /home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o -c /home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.i: cmake_force
@@ -188,7 +202,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_e
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o: /home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o -c /home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.i: cmake_force
@@ -202,7 +216,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o: /home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o -c /home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.i: cmake_force
@@ -216,7 +230,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphi
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o: /home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o -c /home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i: cmake_force
@@ -230,7 +244,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphi
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o: /home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o -c /home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i: cmake_force
@@ -244,7 +258,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphi
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o: /home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o -c /home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.i: cmake_force
@@ -258,7 +272,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.c
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o: /home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o -c /home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.i: cmake_force
@@ -272,7 +286,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.s
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o: /home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o -c /home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i: cmake_force
@@ -286,7 +300,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_Compi
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o: /home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o -c /home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.i: cmake_force
@@ -300,7 +314,7 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o: /home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o -c /home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.i: cmake_force
@@ -311,38 +325,10 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_au
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.s
 
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o: /home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o -c /home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp
-
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp > CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i
-
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s
-
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o: /home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o -c /home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp
-
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp > CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i
-
-CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s
-
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o: /home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o -c /home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.i: cmake_force
@@ -353,10 +339,38 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_a
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.s
 
+CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
+CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o: /home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp
+CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o -c /home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp
+
+CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp > CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i
+
+CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s
+
+CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
+CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o: /home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp
+CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o -c /home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp
+
+CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp > CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i
+
+CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s
+
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o: CMakeFiles/SSL4KEQ.dir/flags.make
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o: /home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o: CMakeFiles/SSL4KEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o -MF CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o.d -o CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o -c /home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp
 
 CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.i: cmake_force
@@ -369,10 +383,11 @@ CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.s: 
 
 # Object files for target SSL4KEQ
 SSL4KEQ_OBJECTS = \
-"CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o" \
-"CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o" \
-"CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o" \
-"CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o" \
+"CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o" \
+"CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o" \
+"CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o" \
+"CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o" \
+"CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o" \
 "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o" \
 "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o" \
 "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o" \
@@ -386,18 +401,19 @@ SSL4KEQ_OBJECTS = \
 "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o" \
 "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o" \
 "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o" \
-"CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o" \
-"CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o" \
 "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o" \
+"CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o" \
+"CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o" \
 "CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o"
 
 # External object files for target SSL4KEQ
 SSL4KEQ_EXTERNAL_OBJECTS =
 
-SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o
-SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o
-SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o
-SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o
+SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/SSL4KEQ.cpp.o
+SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/PluginEditor.cpp.o
+SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/SSLLookAndFeel.cpp.o
+SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/LV2InlineDisplay.cpp.o
+SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/lv2_descriptor_wrapper.c.o
 SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o
 SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o
 SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o
@@ -411,13 +427,13 @@ SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/
 SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
 SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o
 SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o
-SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o
-SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o
 SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o
+SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o
+SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o
 SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o
 SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/build.make
 SSL4KEQ_artefacts/Release/libSSL\ 4000\ EQ_SharedCode.a: CMakeFiles/SSL4KEQ.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library \"SSL4KEQ_artefacts/Release/libSSL 4000 EQ_SharedCode.a\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/marc/Projects/4ke/build_vst3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX static library \"SSL4KEQ_artefacts/Release/libSSL 4000 EQ_SharedCode.a\""
 	$(CMAKE_COMMAND) -P CMakeFiles/SSL4KEQ.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SSL4KEQ.dir/link.txt --verbose=$(VERBOSE)
 
@@ -430,6 +446,6 @@ CMakeFiles/SSL4KEQ.dir/clean:
 .PHONY : CMakeFiles/SSL4KEQ.dir/clean
 
 CMakeFiles/SSL4KEQ.dir/depend: SSL4KEQ_artefacts/JuceLibraryCode/JuceHeader.h
-	cd /home/marc/Projects/4ke/build_vst3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3/CMakeFiles/SSL4KEQ.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/marc/Projects/4ke/build_vst3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marc/Projects/4ke /home/marc/Projects/4ke /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3 /home/marc/Projects/4ke/build_vst3/CMakeFiles/SSL4KEQ.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/SSL4KEQ.dir/depend
 

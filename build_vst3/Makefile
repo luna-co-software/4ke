@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marc/Projects/4ke/build_vst3
+CMAKE_SOURCE_DIR = /home/marc/Projects/4ke
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/marc/Projects/4ke/build_vst3
@@ -163,43 +163,82 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SSL4KEQ
+# Target rules for targets named FourKEQ
 
 # Build rule for target.
-SSL4KEQ: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSL4KEQ
-.PHONY : SSL4KEQ
+FourKEQ: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FourKEQ
+.PHONY : FourKEQ
 
 # fast build rule for target.
-SSL4KEQ/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/build
-.PHONY : SSL4KEQ/fast
+FourKEQ/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/build
+.PHONY : FourKEQ/fast
 
 #=============================================================================
-# Target rules for targets named SSL4KEQ_All
+# Target rules for targets named FourKEQ_All
 
 # Build rule for target.
-SSL4KEQ_All: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSL4KEQ_All
-.PHONY : SSL4KEQ_All
+FourKEQ_All: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FourKEQ_All
+.PHONY : FourKEQ_All
 
 # fast build rule for target.
-SSL4KEQ_All/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_All.dir/build.make CMakeFiles/SSL4KEQ_All.dir/build
-.PHONY : SSL4KEQ_All/fast
+FourKEQ_All/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_All.dir/build.make CMakeFiles/FourKEQ_All.dir/build
+.PHONY : FourKEQ_All/fast
 
 #=============================================================================
-# Target rules for targets named SSL4KEQ_VST3
+# Target rules for targets named FourKEQ_Standalone
 
 # Build rule for target.
-SSL4KEQ_VST3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSL4KEQ_VST3
-.PHONY : SSL4KEQ_VST3
+FourKEQ_Standalone: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FourKEQ_Standalone
+.PHONY : FourKEQ_Standalone
 
 # fast build rule for target.
-SSL4KEQ_VST3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/build
-.PHONY : SSL4KEQ_VST3/fast
+FourKEQ_Standalone/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/build
+.PHONY : FourKEQ_Standalone/fast
+
+#=============================================================================
+# Target rules for targets named FourKEQ_LV2
+
+# Build rule for target.
+FourKEQ_LV2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FourKEQ_LV2
+.PHONY : FourKEQ_LV2
+
+# fast build rule for target.
+FourKEQ_LV2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/build
+.PHONY : FourKEQ_LV2/fast
+
+#=============================================================================
+# Target rules for targets named juce_lv2_helper
+
+# Build rule for target.
+juce_lv2_helper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 juce_lv2_helper
+.PHONY : juce_lv2_helper
+
+# fast build rule for target.
+juce_lv2_helper/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juce_lv2_helper.dir/build.make CMakeFiles/juce_lv2_helper.dir/build
+.PHONY : juce_lv2_helper/fast
+
+#=============================================================================
+# Target rules for targets named FourKEQ_VST3
+
+# Build rule for target.
+FourKEQ_VST3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FourKEQ_VST3
+.PHONY : FourKEQ_VST3
+
+# fast build rule for target.
+FourKEQ_VST3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/build
+.PHONY : FourKEQ_VST3/fast
 
 #=============================================================================
 # Target rules for targets named juce_vst3_helper
@@ -214,108 +253,84 @@ juce_vst3_helper/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/juce_vst3_helper.dir/build.make CMakeFiles/juce_vst3_helper.dir/build
 .PHONY : juce_vst3_helper/fast
 
-home/marc/Projects/4ke/LV2InlineDisplay_stub.o: home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o
-.PHONY : home/marc/Projects/4ke/LV2InlineDisplay_stub.o
+FourKEQ.o: FourKEQ.cpp.o
+.PHONY : FourKEQ.o
 
 # target to build an object file
-home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o
-.PHONY : home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.o
+FourKEQ.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/FourKEQ.cpp.o
+.PHONY : FourKEQ.cpp.o
 
-home/marc/Projects/4ke/LV2InlineDisplay_stub.i: home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.i
-.PHONY : home/marc/Projects/4ke/LV2InlineDisplay_stub.i
+FourKEQ.i: FourKEQ.cpp.i
+.PHONY : FourKEQ.i
 
 # target to preprocess a source file
-home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.i
-.PHONY : home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.i
+FourKEQ.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/FourKEQ.cpp.i
+.PHONY : FourKEQ.cpp.i
 
-home/marc/Projects/4ke/LV2InlineDisplay_stub.s: home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.s
-.PHONY : home/marc/Projects/4ke/LV2InlineDisplay_stub.s
+FourKEQ.s: FourKEQ.cpp.s
+.PHONY : FourKEQ.s
 
 # target to generate assembly for a file
-home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.s
-.PHONY : home/marc/Projects/4ke/LV2InlineDisplay_stub.cpp.s
+FourKEQ.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/FourKEQ.cpp.s
+.PHONY : FourKEQ.cpp.s
 
-home/marc/Projects/4ke/PluginEditor.o: home/marc/Projects/4ke/PluginEditor.cpp.o
-.PHONY : home/marc/Projects/4ke/PluginEditor.o
+FourKLookAndFeel.o: FourKLookAndFeel.cpp.o
+.PHONY : FourKLookAndFeel.o
 
 # target to build an object file
-home/marc/Projects/4ke/PluginEditor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.o
-.PHONY : home/marc/Projects/4ke/PluginEditor.cpp.o
+FourKLookAndFeel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/FourKLookAndFeel.cpp.o
+.PHONY : FourKLookAndFeel.cpp.o
 
-home/marc/Projects/4ke/PluginEditor.i: home/marc/Projects/4ke/PluginEditor.cpp.i
-.PHONY : home/marc/Projects/4ke/PluginEditor.i
+FourKLookAndFeel.i: FourKLookAndFeel.cpp.i
+.PHONY : FourKLookAndFeel.i
 
 # target to preprocess a source file
-home/marc/Projects/4ke/PluginEditor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.i
-.PHONY : home/marc/Projects/4ke/PluginEditor.cpp.i
+FourKLookAndFeel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/FourKLookAndFeel.cpp.i
+.PHONY : FourKLookAndFeel.cpp.i
 
-home/marc/Projects/4ke/PluginEditor.s: home/marc/Projects/4ke/PluginEditor.cpp.s
-.PHONY : home/marc/Projects/4ke/PluginEditor.s
+FourKLookAndFeel.s: FourKLookAndFeel.cpp.s
+.PHONY : FourKLookAndFeel.s
 
 # target to generate assembly for a file
-home/marc/Projects/4ke/PluginEditor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/PluginEditor.cpp.s
-.PHONY : home/marc/Projects/4ke/PluginEditor.cpp.s
+FourKLookAndFeel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/FourKLookAndFeel.cpp.s
+.PHONY : FourKLookAndFeel.cpp.s
 
-home/marc/Projects/4ke/SSL4KEQ.o: home/marc/Projects/4ke/SSL4KEQ.cpp.o
-.PHONY : home/marc/Projects/4ke/SSL4KEQ.o
+PluginEditor.o: PluginEditor.cpp.o
+.PHONY : PluginEditor.o
 
 # target to build an object file
-home/marc/Projects/4ke/SSL4KEQ.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.o
-.PHONY : home/marc/Projects/4ke/SSL4KEQ.cpp.o
+PluginEditor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/PluginEditor.cpp.o
+.PHONY : PluginEditor.cpp.o
 
-home/marc/Projects/4ke/SSL4KEQ.i: home/marc/Projects/4ke/SSL4KEQ.cpp.i
-.PHONY : home/marc/Projects/4ke/SSL4KEQ.i
-
-# target to preprocess a source file
-home/marc/Projects/4ke/SSL4KEQ.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.i
-.PHONY : home/marc/Projects/4ke/SSL4KEQ.cpp.i
-
-home/marc/Projects/4ke/SSL4KEQ.s: home/marc/Projects/4ke/SSL4KEQ.cpp.s
-.PHONY : home/marc/Projects/4ke/SSL4KEQ.s
-
-# target to generate assembly for a file
-home/marc/Projects/4ke/SSL4KEQ.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSL4KEQ.cpp.s
-.PHONY : home/marc/Projects/4ke/SSL4KEQ.cpp.s
-
-home/marc/Projects/4ke/SSLLookAndFeel.o: home/marc/Projects/4ke/SSLLookAndFeel.cpp.o
-.PHONY : home/marc/Projects/4ke/SSLLookAndFeel.o
-
-# target to build an object file
-home/marc/Projects/4ke/SSLLookAndFeel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.o
-.PHONY : home/marc/Projects/4ke/SSLLookAndFeel.cpp.o
-
-home/marc/Projects/4ke/SSLLookAndFeel.i: home/marc/Projects/4ke/SSLLookAndFeel.cpp.i
-.PHONY : home/marc/Projects/4ke/SSLLookAndFeel.i
+PluginEditor.i: PluginEditor.cpp.i
+.PHONY : PluginEditor.i
 
 # target to preprocess a source file
-home/marc/Projects/4ke/SSLLookAndFeel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.i
-.PHONY : home/marc/Projects/4ke/SSLLookAndFeel.cpp.i
+PluginEditor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/PluginEditor.cpp.i
+.PHONY : PluginEditor.cpp.i
 
-home/marc/Projects/4ke/SSLLookAndFeel.s: home/marc/Projects/4ke/SSLLookAndFeel.cpp.s
-.PHONY : home/marc/Projects/4ke/SSLLookAndFeel.s
+PluginEditor.s: PluginEditor.cpp.s
+.PHONY : PluginEditor.s
 
 # target to generate assembly for a file
-home/marc/Projects/4ke/SSLLookAndFeel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/4ke/SSLLookAndFeel.cpp.s
-.PHONY : home/marc/Projects/4ke/SSLLookAndFeel.cpp.s
+PluginEditor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/PluginEditor.cpp.s
+.PHONY : PluginEditor.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.o: home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.o
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.i: home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.i
@@ -323,7 +338,7 @@ home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.i: home/marc
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.s: home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.s
@@ -331,7 +346,7 @@ home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.s: home/marc
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.o: home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o
@@ -339,7 +354,7 @@ home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.o: home/ma
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.i: home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.i
@@ -347,7 +362,7 @@ home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.i: home/ma
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.s: home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.s
@@ -355,7 +370,7 @@ home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.s: home/ma
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.o: home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o
@@ -363,7 +378,7 @@ home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.o: home/ma
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.i: home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i
@@ -371,7 +386,7 @@ home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.i: home/ma
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.s: home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s
@@ -379,8 +394,32 @@ home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.s: home/ma
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.s
+
+home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.o: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.o
+.PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.o
+
+# target to build an object file
+home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juce_lv2_helper.dir/build.make CMakeFiles/juce_lv2_helper.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.o
+.PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.o
+
+home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.i: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.i
+.PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.i
+
+# target to preprocess a source file
+home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juce_lv2_helper.dir/build.make CMakeFiles/juce_lv2_helper.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.i
+.PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.i
+
+home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.s: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.s
+.PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.s
+
+# target to generate assembly for a file
+home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juce_lv2_helper.dir/build.make CMakeFiles/juce_lv2_helper.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.s
+.PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.o: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.o
@@ -411,7 +450,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.i: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.i
@@ -419,7 +460,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.s: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.s
@@ -427,7 +470,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.o: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
@@ -435,7 +480,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.i: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.i
@@ -443,7 +490,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.s: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.s
@@ -451,7 +500,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.o: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
@@ -459,7 +510,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.i: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.i
@@ -467,7 +520,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.s: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.s
@@ -475,7 +530,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.o: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.o
@@ -483,7 +540,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.i: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.i
@@ -491,7 +550,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.s: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.s
@@ -499,7 +560,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.o: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
@@ -507,7 +570,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.i: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.i
@@ -515,7 +580,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.s: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.s
@@ -523,7 +590,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.o: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
@@ -531,7 +600,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.i: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.i
@@ -539,7 +610,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.s: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.s
@@ -547,7 +620,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.o: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.o
@@ -555,7 +630,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.i: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.i
@@ -563,7 +640,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.s: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.s
@@ -571,7 +650,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.o: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o
@@ -579,7 +660,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.i: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.i
@@ -587,7 +670,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.s: home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.s
@@ -595,7 +680,9 @@ home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_clien
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ_VST3.dir/build.make CMakeFiles/SSL4KEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_Standalone.dir/build.make CMakeFiles/FourKEQ_Standalone.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_LV2.dir/build.make CMakeFiles/FourKEQ_LV2.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ_VST3.dir/build.make CMakeFiles/FourKEQ_VST3.dir/home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.o: home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o
@@ -603,7 +690,7 @@ home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.o: h
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.i: home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.i
@@ -611,7 +698,7 @@ home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.i: h
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.s: home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.s
@@ -619,7 +706,7 @@ home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.s: h
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.o: home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o
@@ -627,7 +714,7 @@ home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.i: home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.i
@@ -635,7 +722,7 @@ home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.s: home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.s
@@ -643,7 +730,7 @@ home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.o: home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o
@@ -651,7 +738,7 @@ home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.i: home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.i
@@ -659,7 +746,7 @@ home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.s: home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.s
@@ -667,7 +754,7 @@ home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.o: home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o
@@ -675,7 +762,7 @@ home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.o: home/marc/P
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.i: home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i
@@ -683,7 +770,7 @@ home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.i: home/marc/P
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.s: home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s
@@ -691,7 +778,7 @@ home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.s: home/marc/P
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_core/juce_core.o: home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o
@@ -699,7 +786,7 @@ home/marc/Projects/JUCE/modules/juce_core/juce_core.o: home/marc/Projects/JUCE/m
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_core/juce_core.i: home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.i
@@ -707,7 +794,7 @@ home/marc/Projects/JUCE/modules/juce_core/juce_core.i: home/marc/Projects/JUCE/m
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_core/juce_core.s: home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.s
@@ -715,7 +802,7 @@ home/marc/Projects/JUCE/modules/juce_core/juce_core.s: home/marc/Projects/JUCE/m
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_core/juce_core.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.o: home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
@@ -723,7 +810,7 @@ home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.o: home/marc
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.i: home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i
@@ -731,7 +818,7 @@ home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.i: home/marc
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.s: home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s
@@ -739,7 +826,7 @@ home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.s: home/marc
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.o: home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o
@@ -747,7 +834,7 @@ home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.o: hom
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.i: home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.i
@@ -755,7 +842,7 @@ home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.i: hom
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.s: home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.s
@@ -763,7 +850,7 @@ home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.s: hom
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_data_structures/juce_data_structures.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.o: home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o
@@ -771,7 +858,7 @@ home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.o: home/marc/Projects/JUCE/mod
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.i: home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.i
@@ -779,7 +866,7 @@ home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.i: home/marc/Projects/JUCE/mod
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.s: home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.s
@@ -787,7 +874,7 @@ home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.s: home/marc/Projects/JUCE/mod
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_dsp/juce_dsp.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_events/juce_events.o: home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o
@@ -795,7 +882,7 @@ home/marc/Projects/JUCE/modules/juce_events/juce_events.o: home/marc/Projects/JU
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_events/juce_events.i: home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.i
@@ -803,7 +890,7 @@ home/marc/Projects/JUCE/modules/juce_events/juce_events.i: home/marc/Projects/JU
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_events/juce_events.s: home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.s
@@ -811,7 +898,7 @@ home/marc/Projects/JUCE/modules/juce_events/juce_events.s: home/marc/Projects/JU
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_events/juce_events.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.o: home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o
@@ -819,7 +906,7 @@ home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.o: home/marc/Project
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.i: home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.i
@@ -827,7 +914,7 @@ home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.i: home/marc/Project
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.s: home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.s
@@ -835,7 +922,7 @@ home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.s: home/marc/Project
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.o: home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
@@ -843,7 +930,7 @@ home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.o: home/mar
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.i: home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
@@ -851,7 +938,7 @@ home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.i: home/mar
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.s: home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
@@ -859,7 +946,7 @@ home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.s: home/mar
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.o: home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
@@ -867,7 +954,7 @@ home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.o: home/ma
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
 
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.i: home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
@@ -875,7 +962,7 @@ home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.i: home/ma
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
 
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.s: home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
@@ -883,7 +970,7 @@ home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.s: home/ma
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
 
 home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.o: home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o
@@ -891,7 +978,7 @@ home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.o: home/marc/Pro
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.i: home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.i
@@ -899,7 +986,7 @@ home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.i: home/marc/Pro
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.s: home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.s
@@ -907,7 +994,7 @@ home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.s: home/marc/Pro
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.s
 
 home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.o: home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o
@@ -915,7 +1002,7 @@ home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.o: home/marc/Proje
 
 # target to build an object file
 home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o
 .PHONY : home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o
 
 home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.i: home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.i
@@ -923,7 +1010,7 @@ home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.i: home/marc/Proje
 
 # target to preprocess a source file
 home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.i
 .PHONY : home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.i
 
 home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.s: home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.s
@@ -931,7 +1018,7 @@ home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.s: home/marc/Proje
 
 # target to generate assembly for a file
 home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SSL4KEQ.dir/build.make CMakeFiles/SSL4KEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourKEQ.dir/build.make CMakeFiles/FourKEQ.dir/home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.s
 .PHONY : home/marc/Projects/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.s
 
 # Help Target
@@ -946,22 +1033,22 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... SSL4KEQ_All"
-	@echo "... SSL4KEQ"
-	@echo "... SSL4KEQ_VST3"
+	@echo "... FourKEQ_All"
+	@echo "... FourKEQ"
+	@echo "... FourKEQ_LV2"
+	@echo "... FourKEQ_Standalone"
+	@echo "... FourKEQ_VST3"
+	@echo "... juce_lv2_helper"
 	@echo "... juce_vst3_helper"
-	@echo "... home/marc/Projects/4ke/LV2InlineDisplay_stub.o"
-	@echo "... home/marc/Projects/4ke/LV2InlineDisplay_stub.i"
-	@echo "... home/marc/Projects/4ke/LV2InlineDisplay_stub.s"
-	@echo "... home/marc/Projects/4ke/PluginEditor.o"
-	@echo "... home/marc/Projects/4ke/PluginEditor.i"
-	@echo "... home/marc/Projects/4ke/PluginEditor.s"
-	@echo "... home/marc/Projects/4ke/SSL4KEQ.o"
-	@echo "... home/marc/Projects/4ke/SSL4KEQ.i"
-	@echo "... home/marc/Projects/4ke/SSL4KEQ.s"
-	@echo "... home/marc/Projects/4ke/SSLLookAndFeel.o"
-	@echo "... home/marc/Projects/4ke/SSLLookAndFeel.i"
-	@echo "... home/marc/Projects/4ke/SSLLookAndFeel.s"
+	@echo "... FourKEQ.o"
+	@echo "... FourKEQ.i"
+	@echo "... FourKEQ.s"
+	@echo "... FourKLookAndFeel.o"
+	@echo "... FourKLookAndFeel.i"
+	@echo "... FourKLookAndFeel.s"
+	@echo "... PluginEditor.o"
+	@echo "... PluginEditor.i"
+	@echo "... PluginEditor.s"
 	@echo "... home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.o"
 	@echo "... home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.i"
 	@echo "... home/marc/Projects/JUCE/modules/juce_audio_basics/juce_audio_basics.s"
@@ -971,6 +1058,9 @@ help:
 	@echo "... home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.o"
 	@echo "... home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.i"
 	@echo "... home/marc/Projects/JUCE/modules/juce_audio_formats/juce_audio_formats.s"
+	@echo "... home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.o"
+	@echo "... home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.i"
+	@echo "... home/marc/Projects/JUCE/modules/juce_audio_plugin_client/LV2/juce_LV2ManifestHelper.s"
 	@echo "... home/marc/Projects/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.o"
 	@echo "... home/marc/Projects/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.i"
 	@echo "... home/marc/Projects/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.s"
