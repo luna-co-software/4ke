@@ -5,7 +5,7 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
-@prefix inlinedisplay: <http://lv2plug.in/ns/ext/inline-display#> .
+@prefix idpy: <http://harrisonconsoles.com/lv2/inlinedisplay#> .
 
 <https://example.com/plugins/SSL_4000_EQ_Pure>
 	a lv2:Plugin, lv2:EQPlugin ;
@@ -13,7 +13,8 @@
 	doap:license <http://opensource.org/licenses/GPL-2.0> ;
 	lv2:project <https://example.com/ssl4000eq> ;
 	lv2:optionalFeature lv2:hardRTCapable ;
-	lv2:extensionData inlinedisplay:interface ;
+	lv2:extensionData idpy:interface ;
+	lv2:optionalFeature idpy:queue_draw ;
 
 	lv2:port [
 		a lv2:AudioPort, lv2:InputPort ;
