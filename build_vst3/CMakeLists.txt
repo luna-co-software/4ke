@@ -77,3 +77,12 @@ target_compile_features(SSL4KEQ PRIVATE cxx_std_17)
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
     target_compile_options(SSL4KEQ PRIVATE -O3)
 endif()
+
+# Ensure VST3 symbols are properly exported
+target_compile_options(SSL4KEQ_VST3 PRIVATE
+    -fvisibility=hidden
+)
+
+target_compile_definitions(SSL4KEQ_VST3 PRIVATE
+    JUCE_DLL_BUILD=1
+)

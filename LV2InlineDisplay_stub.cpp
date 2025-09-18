@@ -1,5 +1,5 @@
 // Stub implementation for VST3 builds that don't need LV2 inline display
-#ifndef JucePlugin_Build_LV2
+#if JucePlugin_Build_VST3 && !JucePlugin_Build_LV2
 
 #include "LV2InlineDisplay.h"
 #include "SSL4KEQ.h"
@@ -34,4 +34,4 @@ extern "C" {
     const void* ssl4keq_extension_data(const char*) { return nullptr; }
 }
 
-#endif // !JucePlugin_Build_LV2
+#endif // JucePlugin_Build_VST3 && !JucePlugin_Build_LV2
